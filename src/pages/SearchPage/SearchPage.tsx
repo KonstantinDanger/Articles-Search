@@ -62,6 +62,10 @@ export default function SearchPage() {
       return;
     }
 
+    if (prevQuery !== query) {
+      setPage(1);
+    }
+
     setPrevQuery(query);
     await getArticles(query, page);
   };
