@@ -1,0 +1,32 @@
+.container {
+  padding-left: 2rem;
+}
+
+.loading,
+.noResults {
+  margin-top: 2rem;
+  color: #bbb;
+}
+
+/*PAGINATION*/
+.customRoot {
+  margin-top: 15px;
+}
+
+.customRoot ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 3px;
+}
+
+.customItemActive {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.customItemDisable {
+  opacity: 0.5;
+  pointer-events: none;
+}

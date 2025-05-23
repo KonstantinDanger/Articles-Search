@@ -1,0 +1,15 @@
+.link {
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #82b1ff;
+}
