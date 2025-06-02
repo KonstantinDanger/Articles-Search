@@ -34,9 +34,6 @@ export default function SearchPage() {
         articles.message["total-results"] = maxPaginationResults;
       }
 
-      console.log("totalresults", articles.message["total-results"]);
-      console.log("items amount", fetchedArticles.message.items.length);
-
       if (fetchedArticles.message?.items.length === 0) {
         setNotFoundArticles(true);
         return;

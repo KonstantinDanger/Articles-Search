@@ -12,7 +12,10 @@ export async function fetchArticles(
 ): Promise<IArticleList> {
   // eslint-disable-next-line no-useless-catch
   try {
-    const pageOffset = articlesPerPage * page;
+    let pageOffset = articlesPerPage * page;
+
+    if (pageOffset > maxPaginationResults)
+      pageOffset = maxPaginationResults - articlesPerPage;
 
     const response = await axios.get<IArticleList>("/works", {
       params: {
